@@ -273,6 +273,9 @@ ifeq ($(HOSTARCH),$(ARCH))
 CROSS_COMPILE ?=
 endif
 
+ARCH := aarch64
+CROSS_COMPILE := aarch64-linux-gnu-
+
 KCONFIG_CONFIG	?= .config
 export KCONFIG_CONFIG
 
